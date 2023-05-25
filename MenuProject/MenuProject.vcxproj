@@ -127,12 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Creator.cpp" />
+    <ClCompile Include="Deleter.cpp" />
     <ClCompile Include="Dish.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MenuProject.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="Updater.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Creator.h" />
+    <ClInclude Include="Deleter.h" />
     <ClInclude Include="Dish.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="Updater.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
