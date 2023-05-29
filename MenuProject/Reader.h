@@ -23,7 +23,7 @@ public:
 	}
 	void readMenu(Menu menu) {
 		cout << "ЧТЕНИЕ МЕНЮ" << endl;
-		cout << "Меню на " << menu.getName() << ": " << endl;
+		cout << "Меню " << menu.getName() << ": " << endl;
 		for (int i = 0; i < menu.getDishes().size(); i++) {
 			Dish dish = menu.getDishes()[i];
 

@@ -7,8 +7,20 @@
 #include "Updater.h"
 #include "Deleter.h"
 
+using namespace std;
+struct Eatery{
+	string name;
+	Menu menu;
+};
+
 int main()
 {
+	Eatery eatery;
+	string eateryName;
+	cout << "Введите название заведения\n";
+	cin >> eateryName;
+	eatery.name = eateryName;
+
 	Updater updater;
 	Deleter deleter;
 	Reader reader;
@@ -16,6 +28,7 @@ int main()
 	Menu menu;
 	Creator creator;
 	menu = creator.createMenu();
+	eatery.menu = menu;
 
 	cout << "\nДействия:\n\n 1.Добавить блюдо\n 2.Прочитать меню\n 3.Прочитать блюдо\n 4.Обновить блюдо\n 5.Удалить блюдо\n 6.Удалить все блюда из меню\n 7.Закончить программу\n\n";
 	int action = 0;
